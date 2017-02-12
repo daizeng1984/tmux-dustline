@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # Wombat color scheme
+# A good resource to lookup terminal color
+# https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
 
 # The copy modes etc
 tmux setw -g mode-attr bold
