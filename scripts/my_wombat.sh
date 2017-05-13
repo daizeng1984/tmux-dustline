@@ -3,6 +3,7 @@
 # TODO change these to use funciton
 # Load scheme file
 # Stolen from https://github.com/tmux-plugins/tmux-battery
+# and inspired also by https://coderwall.com/p/trgyrq/make-your-tmux-status-bar-responsive
 get_tmux_option() {
 	local option="$1"
 	local default_value="$2"

@@ -2,19 +2,24 @@
 # Wombat color scheme
 # A good resource to lookup terminal color
 # https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
+# A good resource to find a unicode symbol
+# https://unicode-table.com/en/#latin-extended-b
+# https://unicode-table.com/en/blocks/dingbats/
+# https://github.com/ryanoasis/nerd-fonts
+#  and then try it out in your shell with: echo -e "\ue0a0\ue0a1\ue0a2\ue0b0\ue0b1\ue0b2\ue0b3
 
 # The copy modes etc
 tmux setw -g mode-attr bold
 tmux setw -g mode-fg colour228
 tmux setw -g mode-bg colour238
 # Panes border version > 1.9
-tmux set -g pane-border-fg colour238
-tmux set -g pane-border-bg colour235
-tmux set -g pane-active-border-fg colour51
-tmux set -g pane-active-border-bg colour32
+# tmux set -g pane-border-fg colour238
+# tmux set -g pane-border-bg colour235
+# tmux set -g pane-active-border-fg colour51
+# tmux set -g pane-active-border-bg colour32
 
 # The statusbar
-tmux set -g status-position top
+tmux set -g status-position bottom
 tmux set -g status-bg colour238
 tmux set -g status-fg colour230
 tmux set -g status-attr dim
