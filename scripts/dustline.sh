@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
-# Scheme
-# TODO change these to use funciton
-# Load scheme file
-# Stolen from https://github.com/tmux-plugins/tmux-battery
-# and inspired also by https://coderwall.com/p/trgyrq/make-your-tmux-status-bar-responsive
+# Dustline color scheme for tmux, the name is to honor powerline and airline
+# This work is mainly inspired by https://coderwall.com/p/trgyrq/make-your-tmux-status-bar-responsive
+
 # constants
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 

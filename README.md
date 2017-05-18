@@ -1,10 +1,10 @@
-# Tmux Wombat/airline Style Color Scheme
+# Tmux powerline/airline Style Color Scheme
 "Native" color scheme simply on modern tmux
 
 # Prerequisite 
 tmux
 bash
-*Powerfont
+*Powerfont or Nerdfont
 
 # Support Customization
 See wombat example under ./colorscheme
@@ -12,21 +12,18 @@ See wombat example under ./colorscheme
 # Example to configure on
 
 ```bash
-set -g @my_wombatscheme_file "wombat.tmux" # Set your color scheme file
+set -g @dustline_scheme_file "wombat.tmux" # Set your color scheme file
 
-# customize status line ... could it be better?
-set -g status-right '#{my_wombatscheme_begin}'\
+# customize status line
+set -g status-right '#{dustline_scheme_begin}'\
 '#[bold]CPU:#{cpu_percentage}'\
-'#{my_wombatscheme_separator}'\
+'#{dustline_scheme_separator}'\
 '#{battery_icon}#{battery_percentage}'\
-'#{my_wombatscheme_separator}'\
+'#{dustline_scheme_separator}'\
 '%Y-%m-%d %a %H:%M'\
-'#{my_wombatscheme_end}'
+'#{dustline_scheme_end}'
 
 ```
-
-- [ ] Add screenshot
-- [ ] More refactoring
 
 # License
 TODO

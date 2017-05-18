@@ -51,7 +51,7 @@ tmux set -g message-fg colour232
 tmux set -g message-bg colour166
 
 # Get option and save them
-# Expected input ... status-right "#{my_wombatscheme} blabla #{my_wombatscheme_separator} blablaagain |"
+# Expected input ... status-right "#{dustline_scheme} blabla #{dustline_scheme_separator} blablaagain |"
 myscheme_separator_icons_left=""
 myscheme_separator_icons_right=""
 
@@ -78,13 +78,13 @@ myscheme_segment_bg=(
 'colour216'
 )
 
-myscheme_tab_fg='colour192'
+myscheme_tab_fg='colour117'
 myscheme_tab_bg='colour235'
 myscheme_tab_prefixon_fg='colour117'
 myscheme_tab_prefixon_bg='colour24'
 
-myscheme_current_tab_fg='colour117'
-myscheme_current_tab_bg='colour245'
+myscheme_current_tab_fg='colour67'
+myscheme_current_tab_bg='colour107'
 myscheme_current_tab_prefixon_fg='colour202'
 myscheme_current_tab_prefixon_bg='colour123'
 
