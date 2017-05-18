@@ -13,13 +13,12 @@ tmux setw -g mode-attr bold
 tmux setw -g mode-fg colour228
 tmux setw -g mode-bg colour238
 # Panes border version > 1.9
-# tmux set -g pane-border-fg colour238
-# tmux set -g pane-border-bg colour235
-# tmux set -g pane-active-border-fg colour51
-# tmux set -g pane-active-border-bg colour32
+tmux set -g pane-border-fg colour238
+tmux set -g pane-border-bg colour235
+tmux set -g pane-active-border-fg colour51
+tmux set -g pane-active-border-bg colour32
 
 # The statusbar
-tmux set -g status-position bottom
 tmux set -g status-bg colour238
 tmux set -g status-fg colour230
 tmux set -g status-attr dim
@@ -28,6 +27,17 @@ tmux set -g status-right-length 100
 tmux set -g status-left-length 40
 
 # Window
+# Window style
+tmux set -g window-style 'fg=colour247,bg=colour236'
+tmux set -g window-active-style 'fg=colour250,bg=black'
+# Window
+# TODO: make window status configurable?
+tmux setw -g window-status-current-format '#{dustline_scheme_begin}'\
+'#[bold]#I:#[fg=colour232]#W#[fg=colour0,bold]#F'\
+'#{dustline_scheme_end}'
+tmux setw -g window-status-format '#{dustline_scheme_begin}'\
+'#I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F'\
+'#{dustline_scheme_end}'
 tmux setw -g window-status-fg colour123
 tmux setw -g window-status-bg colour235
 tmux setw -g window-status-current-fg colour81
