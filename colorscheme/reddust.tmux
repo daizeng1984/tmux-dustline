@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
-# Wombat color scheme
-# A good resource to lookup terminal color
-# https://upload.wikimedia.org/wikipedia/commons/1/15/Xterm_256color_chart.svg
-# A good resource to find a unicode symbol
-# https://unicode-table.com/en/#latin-extended-b
-# https://unicode-table.com/en/blocks/dingbats/
-# https://github.com/ryanoasis/nerd-fonts
-#  and then try it out in your shell with: echo -e "\ue0a0\ue0a1\ue0a2\ue0b0\ue0b1\ue0b2\ue0b3
+# Red Dust (Mars) color scheme
 
 # The copy modes etc
 tmux setw -g mode-attr bold
@@ -33,7 +26,7 @@ tmux set -g window-active-style 'fg=colour250,bg=black'
 # Window
 # TODO: make window status configurable?
 tmux setw -g window-status-current-format '#{dustline_scheme_begin}'\
-'#[bold]#I:#[fg=colour232]#W#[fg=colour0,bold]#F'\
+'#[bold]#I:#[fg=colour88]#W#[fg=colour0,bold]#F'\
 '#{dustline_scheme_end}'
 tmux setw -g window-status-format '#{dustline_scheme_begin}'\
 '#I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F'\
@@ -52,39 +45,40 @@ tmux set -g message-bg colour166
 
 # Get option and save them
 # Expected input ... status-right "#{dustline_scheme} blabla #{dustline_scheme_separator} blablaagain |"
-myscheme_separator_icons_left="" #
+myscheme_separator_icons_left=""
 myscheme_separator_icons_right=""
 
 # Overall status bar color with prefix on/off
 myscheme_prefixon_fg='colour232'
-myscheme_prefixon_bg='colour32'
+myscheme_prefixon_bg='colour208'
 myscheme_prefixoff_fg='colour230'
-myscheme_prefixoff_bg='colour238'
+myscheme_prefixoff_bg='colour59'
 
 # the color of last icon on status-left and first icon on status-right
-myscheme_boundary_fg='colour232'
-myscheme_boundary_bg='colour192'
-myscheme_boundary_prefix_fg='colour232'
-myscheme_boundary_prefix_bg='colour117'
+myscheme_boundary_fg='colour52'
+myscheme_boundary_bg='colour130'
+myscheme_boundary_prefix_fg='colour238'
+myscheme_boundary_prefix_bg='colour214'
 
 myscheme_segment_fg=(
 'colour232'
-'colour232'
-'colour232'
+'colour124'
+'colour124'
 )
 myscheme_segment_bg=(
-'colour228'
-'colour222'
-'colour216'
+'colour124'
+'colour88'
+'colour52'
 )
 
 myscheme_tab_fg='colour117'
 myscheme_tab_bg='colour235'
-myscheme_tab_prefixon_fg='colour117'
-myscheme_tab_prefixon_bg='colour24'
+myscheme_tab_prefixon_fg='colour230'
+myscheme_tab_prefixon_bg='colour130'
 
-myscheme_current_tab_fg='colour67'
-myscheme_current_tab_bg='colour107'
-myscheme_current_tab_prefixon_fg='colour202'
-myscheme_current_tab_prefixon_bg='colour123'
+myscheme_current_tab_fg='colour9'
+myscheme_current_tab_bg='colour130'
+myscheme_current_tab_prefixon_fg='colour117'
+myscheme_current_tab_prefixon_bg='colour39'
+
 
