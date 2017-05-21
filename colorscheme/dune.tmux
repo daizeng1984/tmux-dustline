@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Dune
+# Dune Color Scheme that make you thirsty
 
 # The copy modes etc
 tmux setw -g mode-attr bold

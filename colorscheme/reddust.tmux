@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Red Dust (Mars) color scheme
+# Red Dust color scheme as in Sakura
 
 # The copy modes etc
 tmux setw -g mode-attr bold
@@ -50,20 +50,20 @@ myscheme_separator_icons_right=""
 
 # Overall status bar color with prefix on/off
 myscheme_prefixon_fg='colour232'
-myscheme_prefixon_bg='colour208'
+myscheme_prefixon_bg='colour131'
 myscheme_prefixoff_fg='colour230'
 myscheme_prefixoff_bg='colour59'
 
 # the color of last icon on status-left and first icon on status-right
-myscheme_boundary_fg='colour52'
-myscheme_boundary_bg='colour130'
-myscheme_boundary_prefix_fg='colour238'
-myscheme_boundary_prefix_bg='colour214'
+myscheme_boundary_fg='colour217'
+myscheme_boundary_bg='colour131'
+myscheme_boundary_prefix_fg='colour52'
+myscheme_boundary_prefix_bg='colour210'
 
 myscheme_segment_fg=(
-'colour232'
-'colour124'
-'colour124'
+'colour217'
+'colour217'
+'colour217'
 )
 myscheme_segment_bg=(
 'colour124'
@@ -71,14 +71,14 @@ myscheme_segment_bg=(
 'colour52'
 )
 
-myscheme_tab_fg='colour117'
+myscheme_tab_fg='colour217'
 myscheme_tab_bg='colour235'
 myscheme_tab_prefixon_fg='colour230'
-myscheme_tab_prefixon_bg='colour130'
+myscheme_tab_prefixon_bg='colour95'
 
-myscheme_current_tab_fg='colour9'
-myscheme_current_tab_bg='colour130'
-myscheme_current_tab_prefixon_fg='colour117'
-myscheme_current_tab_prefixon_bg='colour39'
+myscheme_current_tab_fg='colour217'
+myscheme_current_tab_bg='colour203'
+myscheme_current_tab_prefixon_fg='colour232'
+myscheme_current_tab_prefixon_bg='colour217'
 
 
