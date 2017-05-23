@@ -2,25 +2,25 @@
 Tmux Powerline/Airline Style Color Scheme. Native and simple.
 ![img](./dustline-screenshot.png)
 and
-![anim](./todo.png)
+![anim](./dustline-animation.gif.png)
 
 ## Why
 * Status bar highlight when you press prefix
 * More colors
 * New colorschemes and more coming soon!
 
-# Prerequisite 
-* tmux
+## Prerequisite 
+* tmux and [TPM](https://github.com/tmux-plugins/tpm) (tmux version >=1.9 )
 * bash
 * Powerfont or Nerdfont (Optional)
 
-# Install 
+## Install 
 With tmux plugin manager (TPM) 
 ```sh
 set -g @plugin 'daizeng1984/tmux-dustline'
 ```
 
-# Example in your .tmux.conf
+## Example in your .tmux.conf
  
 ```bash
 set -g @dustline_scheme_file "wombat.tmux" # Set your color scheme file
@@ -47,5 +47,5 @@ set -g status-right '#{dustline_scheme_begin}'\
 ## Customize Your Own Colorscheme
 See wombat.tmux example under ./colorscheme
 
-# License
+## License
 [MIT](./LICENSE.md)
