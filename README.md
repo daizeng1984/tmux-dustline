@@ -2,7 +2,7 @@
 Tmux Powerline/Airline Style Color Scheme. Native and simple.
 ![img](./dustline-screenshot.png)
 and
-![anim](./dustline-animation.gif.png)
+![anim](./dustline-animation.gif)
 
 ## Why
 * Status bar highlight when you press prefix
