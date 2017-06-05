@@ -32,7 +32,7 @@ prefix_color() {
 
 # Status bar's prefix header
 statusbar_prefix_header() {
-    echo "#{?client_prefix,#(tmux set -g status-fg ${myscheme_prefixon_fg} && tmux set -g status-bg ${myscheme_prefixon_bg}),#(tmux set -g status-fg ${myscheme_prefixoff_fg} && tmux set -g status-bg ${myscheme_prefixoff_bg})}"
+    echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg}),#(tmux set -g status-bg ${myscheme_prefixoff_bg})}"
 }
 
 # Render out the status scheme (left and right except tab)
