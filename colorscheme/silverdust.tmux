@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Diamond Dust in Frozen World
+# Silver Dust in Grey World
 
 # The copy modes etc
 tmux setw -g mode-attr bold
@@ -20,11 +20,13 @@ tmux set -g status-right-length 100
 tmux set -g status-left-length 40
 
 # Window
-# Window style
-tmux set -g window-style 'fg=colour247,bg=colour236'
-tmux set -g window-active-style 'fg=colour250,bg=black'
-# Window
 # TODO: make window status configurable?
+tmux setw -g window-status-current-format '#{dustline_scheme_begin}'\
+'#[bold]#I:#[fg=colour88]#W#[fg=colour0,bold]#F'\
+'#{dustline_scheme_end}'
+tmux setw -g window-status-format '#{dustline_scheme_begin}'\
+'#I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F'\
+'#{dustline_scheme_end}'
 tmux setw -g window-status-fg colour123
 tmux setw -g window-status-bg colour235
 tmux setw -g window-status-current-fg colour81
@@ -42,6 +44,9 @@ tmux set -g message-bg colour166
 myscheme_separator_icons_left="" #
 myscheme_separator_icons_right=""
 
+# Default screen bg color
+myscheme_default_mainscreen_background='black'
+myscheme_prefixon_mainscreen_background='colour250'
 # Overall status bar color with prefix on/off
 myscheme_prefixon_fg='colour232'
 myscheme_prefixon_bg='colour250'
@@ -82,4 +87,7 @@ tmux setw -g window-status-format '#{dustline_scheme_begin}'\
 '#I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F'\
 '#{dustline_scheme_end}'
 
+# Window style
+tmux set -g window-style "fg=colour247,bg=colour236"
+tmux set -g window-active-style "fg=colour250,bg=${myscheme_default_mainscreen_background}"
 

@@ -20,10 +20,6 @@ tmux set -g status-right-length 100
 tmux set -g status-left-length 40
 
 # Window
-# Window style
-tmux set -g window-style 'fg=colour247,bg=colour236'
-tmux set -g window-active-style 'fg=colour250,bg=black'
-# Window
 # TODO: make window status configurable?
 tmux setw -g window-status-current-format '#{dustline_scheme_begin}'\
 '#[bold]#I:#[fg=colour88]#W#[fg=colour0,bold]#F'\
@@ -48,6 +44,9 @@ tmux set -g message-bg colour166
 myscheme_separator_icons_left=""
 myscheme_separator_icons_right=""
 
+# Default screen bg color
+myscheme_default_mainscreen_background='black'
+myscheme_prefixon_mainscreen_background='colour131'
 # Overall status bar color with prefix on/off
 myscheme_prefixon_fg='colour232'
 myscheme_prefixon_bg='colour131'
@@ -81,4 +80,7 @@ myscheme_current_tab_bg='colour203'
 myscheme_current_tab_prefixon_fg='colour232'
 myscheme_current_tab_prefixon_bg='colour217'
 
+# Window style
+tmux set -g window-style "fg=colour247,bg=colour236"
+tmux set -g window-active-style "fg=colour250,bg=${myscheme_default_mainscreen_background}"
 

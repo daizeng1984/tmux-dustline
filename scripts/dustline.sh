@@ -32,7 +32,7 @@ prefix_color() {
 
 # Status bar's prefix header
 statusbar_prefix_header() {
-    echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg}),#(tmux set -g status-bg ${myscheme_prefixoff_bg})}"
+    echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg} && tmux set -ag window-active-style 'bg=${myscheme_prefixon_mainscreen_background}' ),#(tmux set -g status-bg ${myscheme_prefixoff_bg} && tmux set -ag window-active-style 'bg=${myscheme_default_mainscreen_background}' )}"
 }
 
 # Render out the status scheme (left and right except tab)
