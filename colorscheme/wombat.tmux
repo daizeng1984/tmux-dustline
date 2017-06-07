@@ -53,7 +53,7 @@ myscheme_separator_icons_right="" #
 
 # Default screen bg color
 myscheme_default_mainscreen_background='black'
-myscheme_prefixon_mainscreen_background='colour107'
+myscheme_prefixon_mainscreen_background='colour22'
 # Overall status bar color with prefix on/off
 myscheme_prefixon_fg='colour232'
 myscheme_prefixon_bg='colour32'
