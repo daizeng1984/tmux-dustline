@@ -15,6 +15,7 @@ load_scheme_file() {
 # get color scheme file you set
 get_myscheme_settings() {
     schemefile=$(get_tmux_option "@dustline_scheme_file")
+    schemebackground=$(get_tmux_option "@dustline_prefix_background_highlight")
 }
 get_myscheme_settings
 load_scheme_file $schemefile
@@ -32,7 +33,11 @@ prefix_color() {
 
 # Status bar's prefix header
 statusbar_prefix_header() {
-    echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg} && tmux set -ag window-active-style 'bg=${myscheme_prefixon_mainscreen_background}' ),#(tmux set -g status-bg ${myscheme_prefixoff_bg} && tmux set -ag window-active-style 'bg=${myscheme_default_mainscreen_background}' )}"
+    if [[ ${schemebackground} = "1" ]] ; then
+        echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg} && tmux set -ag window-active-style 'bg=${myscheme_prefixon_mainscreen_background}' ),#(tmux set -g status-bg ${myscheme_prefixoff_bg} && tmux set -ag window-active-style 'bg=${myscheme_default_mainscreen_background}' )}"
+    else
+        echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg}),#(tmux set -g status-bg ${myscheme_prefixoff_bg})}"
+    fi
 }
 
 # Render out the status scheme (left and right except tab)
