@@ -1,18 +1,20 @@
 # Dustline Tmux Colorscheme Plugin
 Tmux Powerline/Airline Style Color Scheme. Native and simple.
+
 ![img](./dustline-screenshot.png)
+
 and
+
 ![anim](./dustline-animation.gif)
 
 ## Why
 * Status bar highlight when you press prefix
-* More colors
-* New colorschemes and more coming soon!
+* More colors and new colorschemes and more coming soon!
 
 ## Prerequisite 
 * tmux and [TPM](https://github.com/tmux-plugins/tpm) (tmux version >=1.9 )
 * bash
-* Powerfont or Nerdfont (Optional)
+* Powerfont, Nerdfont (Optional)
 
 ## Install 
 With tmux plugin manager (TPM) 
@@ -30,7 +32,7 @@ You can then set status line with as many plugins icons as you like to either le
 
 ```sh
 set -g status-left '#{dustline_scheme_begin}'\
-'#[bold]  '\
+'#[bold] *'\
 '#{dustline_scheme_separator}'\
 ' Host'\
 '#{dustline_scheme_end}'
@@ -42,6 +44,12 @@ set -g status-right '#{dustline_scheme_begin}'\
 '#{dustline_scheme_separator}'\
 ' %m-%d'\
 '#{dustline_scheme_end}'
+```
+
+## Highlight Active Panel (Experimental)
+You can also highlight the active panel by adding:
+```sh
+set -g @dustline_prefix_background_highlight "1"
 ```
 
 ## Customize Your Own Colorscheme
