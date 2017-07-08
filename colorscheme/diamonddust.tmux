@@ -22,7 +22,7 @@ tmux set -g status-left-length 40
 # Window
 # TODO: make window status configurable?
 tmux setw -g window-status-current-format '#{dustline_scheme_begin}'\
-'#[bold]#I:#[fg=colour88]#W#[fg=colour0,bold]#F'\
+'#[bold]#I:#[fg=colour117]#W#[fg=colour0,bold]#F'\
 '#{dustline_scheme_end}'
 tmux setw -g window-status-format '#{dustline_scheme_begin}'\
 '#I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F'\

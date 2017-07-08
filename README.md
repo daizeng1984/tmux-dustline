@@ -7,6 +7,9 @@ and
 
 ![anim](./dustline-animation.gif)
 
+and
+![experimental](./dustline-experimental.gif)
+
 ## Why
 * Status bar highlight when you press prefix
 * More colors and new colorschemes and more coming soon!
