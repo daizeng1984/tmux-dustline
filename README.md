@@ -8,6 +8,7 @@ and
 ![anim](./dustline-animation.gif)
 
 and
+
 ![experimental](./dustline-experimental.gif)
 
 ## Why
@@ -31,7 +32,7 @@ set -g @plugin 'daizeng1984/tmux-dustline'
 set -g @dustline_scheme_file "wombat.tmux" # Set your color scheme file
 ```
 
-You can then set status line with as many plugins icons as you like to either left or right status bar
+For more color scheme files, please take look at [colorscheme folder](https://github.com/daizeng1984/tmux-dustline/tree/master/colorscheme). You can then set status line with as many plugins icons as you like to either left or right status bar
 
 ```sh
 set -g status-left '#{dustline_scheme_begin}'\
