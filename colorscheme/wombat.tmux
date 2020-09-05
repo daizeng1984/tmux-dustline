@@ -48,8 +48,8 @@ tmux set -g message-bg colour166
 
 # Get option and save them
 # Expected input ... status-right "#{dustline_scheme} blabla #{dustline_scheme_separator} blablaagain |"
-myscheme_separator_icons_left="" #
-myscheme_separator_icons_right="" #
+myscheme_separator_icons_left="" #
+myscheme_separator_icons_right="" #
 
 # Default screen bg color
 myscheme_default_mainscreen_background='black'
