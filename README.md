@@ -18,7 +18,6 @@ and
 ## Prerequisite 
 * tmux and [TPM](https://github.com/tmux-plugins/tpm) (tmux version >=1.9 )
 * bash
-* Powerfont, Nerdfont (Optional)
 
 ## Install 
 With tmux plugin manager (TPM) 
@@ -35,22 +34,19 @@ set -g @dustline_scheme_file "wombat.tmux" # Set your color scheme file
 For more color scheme files, please take look at [colorscheme folder](https://github.com/daizeng1984/tmux-dustline/tree/master/colorscheme). You can then set status line with as many plugins icons as you like to either left or right status bar
 
 ```sh
-set -g status-left '#{dustline_scheme_begin}'\
-'#[bold] *'\
-'#{dustline_scheme_separator}'\
-' Host'\
-'#{dustline_scheme_end}'
+set -g @dustline_scheme_file "$TMUX_DUSTLINE_SCHEME.tmux"
+set -g @dustline_prefix_background_highlight "1"
 
 set -g status-right '#{dustline_scheme_begin}'\
-'#[bold]CPU:#{cpu_percentage}'\
+'#(whoami)'\
 '#{dustline_scheme_separator}'\
-'#{battery_percentage}'\
+':#(uname) '\
 '#{dustline_scheme_separator}'\
-' %m-%d'\
+' %m-%d %H:%M'\
 '#{dustline_scheme_end}'
 ```
 
-## Highlight Active Panel (Experimental)
+## Highlight Active Panel
 You can also highlight the active panel by adding:
 ```sh
 set -g @dustline_prefix_background_highlight "1"
