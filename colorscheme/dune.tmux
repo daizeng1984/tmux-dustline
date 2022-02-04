@@ -76,7 +76,7 @@ myscheme_tab_prefixon_fg='colour230'
 myscheme_tab_prefixon_bg='colour94'
 
 myscheme_current_tab_fg='colour217'
-myscheme_current_tab_bg='colour203'
+myscheme_current_tab_bg='colour136'
 myscheme_current_tab_prefixon_fg='colour232'
 myscheme_current_tab_prefixon_bg='colour217'
 

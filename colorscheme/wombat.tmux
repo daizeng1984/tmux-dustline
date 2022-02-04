@@ -56,7 +56,7 @@ myscheme_default_mainscreen_background='black'
 myscheme_prefixon_mainscreen_background='colour22'
 # Overall status bar color with prefix on/off
 myscheme_prefixon_fg='colour232'
-myscheme_prefixon_bg='colour32'
+myscheme_prefixon_bg='colour154'
 myscheme_prefixoff_fg='colour230'
 myscheme_prefixoff_bg='colour238'
 
@@ -64,7 +64,7 @@ myscheme_prefixoff_bg='colour238'
 myscheme_boundary_fg='colour232'
 myscheme_boundary_bg='colour192'
 myscheme_boundary_prefix_fg='colour232'
-myscheme_boundary_prefix_bg='colour117'
+myscheme_boundary_prefix_bg='colour154'
 
 myscheme_segment_fg=(
 'colour232'
@@ -85,7 +85,7 @@ myscheme_tab_prefixon_bg='colour24'
 myscheme_current_tab_fg='colour67'
 myscheme_current_tab_bg='colour107'
 myscheme_current_tab_prefixon_fg='colour202'
-myscheme_current_tab_prefixon_bg='colour123'
+myscheme_current_tab_prefixon_bg='colour82'
 
 # Window style
 tmux set -g window-style "fg=colour247,bg=colour236"
