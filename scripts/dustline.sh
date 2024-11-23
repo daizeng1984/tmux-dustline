@@ -15,6 +15,7 @@ load_scheme_file() {
 # get color scheme file you set
 get_myscheme_settings() {
     schemefile=$(get_tmux_option "@dustline_scheme_file")
+    schemeheaderhighlight=$(get_tmux_option "@dustline_prefix_header_highlight")
     schemebackground=$(get_tmux_option "@dustline_prefix_background_highlight")
 }
 get_myscheme_settings
@@ -33,10 +34,14 @@ prefix_color() {
 
 # Status bar's prefix header
 statusbar_prefix_header() {
-    if [[ ${schemebackground} = "1" ]] ; then
-        echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg} && tmux set -ag window-active-style 'bg=${myscheme_prefixon_mainscreen_background}' ),#(tmux set -g status-bg ${myscheme_prefixoff_bg} && tmux set -ag window-active-style 'bg=${myscheme_default_mainscreen_background}' )}"
-    else
-        echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg}),#(tmux set -g status-bg ${myscheme_prefixoff_bg})}"
+    if [[ ${schemeheaderhighlight} = "1" ]] ; then
+        if [[ ${schemebackground} = "1" ]] ; then
+            echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg} && tmux set -ag window-active-style 'bg=${myscheme_prefixon_mainscreen_background}' ),#(tmux set -g status-bg ${myscheme_prefixoff_bg} && tmux set -ag window-active-style 'bg=${myscheme_default_mainscreen_background}' )}"
+        else
+            echo "#{?client_prefix,#(tmux set -g status-bg ${myscheme_prefixon_bg}),#(tmux set -g status-bg ${myscheme_prefixoff_bg})}"
+        fi
+    else 
+        echo ""
     fi
 }
 
